@@ -23,17 +23,17 @@ A service mesh like Istio takes these common concerns out of the individual serv
 
 #### Key Capabilities Istio Provides:
 
-Traffic Management: Sophisticated control over traffic flow. This includes dynamic routing (e.g., for A/B testing, canary deployments, gradual rollouts), retries, failovers, fault injection (to test resiliency), and circuit breaking.
+- Traffic Management: Sophisticated control over traffic flow. This includes dynamic routing (e.g., for A/B testing, canary deployments, gradual rollouts), retries, failovers, fault injection (to test resiliency), and circuit breaking.
 
-Security: Istio provides a robust security model, including:
-Mutual TLS (mTLS): Secure, encrypted communication between services by default.
-Identity Management: Strong, verifiable identities for every service.
-Authorization Policies: Fine-grained control over which services can communicate with each other.
-Observability: Deep insights into what's happening in your service mesh. This includes: 
-Metrics: Detailed telemetry for all traffic (e.g., latency, error rates, request volume).
-Distributed Tracing: The ability to follow a request as it flows through multiple services.
-Logging: Access logs for service traffic.
-Policy Enforcement: Apply rate limits, quotas, and other policies consistently across services.
+- Security: Istio provides a robust security model, including:
+    - Mutual TLS (mTLS): Secure, encrypted communication between services by default.
+    - Identity Management: Strong, verifiable identities for every service.
+    - Authorization Policies: Fine-grained control over which services can communicate with each other.
+- Observability: Deep insights into what's happening in your service mesh. This includes: 
+   - Metrics: Detailed telemetry for all traffic (e.g., latency, error rates, request volume).
+   - Distributed Tracing: The ability to follow a request as it flows through multiple services.
+   - Logging: Access logs for service traffic.
+- Policy Enforcement: Apply rate limits, quotas, and other policies consistently across services.
 Platform Independence: While commonly used with Kubernetes, Istio is designed to work in various environments, including on-premises and other cloud platforms.
 The "How": Istio's Architecture
 Istio's architecture is logically split into two main parts:
