@@ -15,7 +15,7 @@ Before Istio, developers often had to build common networking and management fun
 - Security: How do you enforce secure communication (encryption, authentication, authorization) between services?
 - Policy Enforcement: How do you apply rate limiting or quotas?
 
-  Building these features into every service is duplicative, error-prone, and makes services "fatter" and harder to maintain.
+Building these features into every service is duplicative, error-prone, and makes services "fatter" and harder to maintain.
 
 ### The "What": Service Mesh and Istio's Role
 A service mesh like Istio takes these common concerns out of the individual services and handles them at a separate infrastructure layer. This makes your microservices "thinner" as they can focus solely on their business logic.
