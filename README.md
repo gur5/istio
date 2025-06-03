@@ -67,3 +67,37 @@ Istio's architecture is logically split into two main parts:
 - **Incremental Adoption:** You can gradually introduce Istio into your existing applications.
   
 In essence, Istio provides a powerful and flexible way to manage the complexities of a microservices architecture, making your applications more secure, reliable, and observable.
+
+# Istio & East-West Traffic: Securing and Managing Internal Service Communication
+
+In a microservices architecture, east-west traffic refers to communication between services inside the cluster (as opposed to north-south traffic, which is between external clients and services).
+
+**How Istio Manages East-West Traffic**
+Istio is particularly powerful in securing, observing, and controlling east-west traffic through:
+
+### 1. Secure Communication (mTLS Encryption)
+
+- **Mutual TLS (mTLS):** Istio automatically encrypts service-to-service traffic using mutual TLS.
+
+    - Each service gets an identity via SPIFFE (Secure Production Identity Framework for Everyone).
+
+    - The sidecar proxies (Envoy) handle TLS termination and initiation.
+
+- **Authentication & Authorization:**
+
+    - **PeerAuthentication:** Enforces whether mTLS is required (strict, permissive, or disabled).
+    - **AuthorizationPolicy:** Defines RBAC rules (e.g., "Service A can only call Service B").
+
+
+
+
+
+
+
+
+
+
+
+
+
+- **AuthorizationPolicy:** Defines RBAC rules (e.g., "Service A can only call Service B").
