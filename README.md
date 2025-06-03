@@ -8,12 +8,12 @@ Here's a breakdown of what that means and how Istio works:
 ### The "Why": Challenges of Microservices
 Before Istio, developers often had to build common networking and management functionalities directly into each microservice. This included things like:
 
-- Service Discovery: How do services find each other in a dynamic environment?
-- Load Balancing: How is traffic distributed efficiently across multiple instances of a service?
-- Failure Recovery: What happens when a service becomes unresponsive? (e.g., retries, timeouts, circuit breaking)
-- Metrics & Monitoring: How do you get visibility into the health and performance of services and the traffic between them?
-- Security: How do you enforce secure communication (encryption, authentication, authorization) between services?
-- Policy Enforcement: How do you apply rate limiting or quotas?
+- **Service Discovery**: How do services find each other in a dynamic environment?
+- **Load Balancing**: How is traffic distributed efficiently across multiple instances of a service?
+- **Failure Recovery**: What happens when a service becomes unresponsive? (e.g., retries, timeouts, circuit breaking)
+- **Metrics & Monitoring**: How do you get visibility into the health and performance of services and the traffic between them?
+- **Security**: How do you enforce secure communication (encryption, authentication, authorization) between services?
+- **Policy Enforcement**: How do you apply rate limiting or quotas?
 
 Building these features into every service is duplicative, error-prone, and makes services "fatter" and harder to maintain.
 
