@@ -57,6 +57,7 @@ Istio's architecture is logically split into two main parts:
 **2. Control Plane Action:** Istiod reads these configurations, understands the current state of your services (e.g., which service instances are running and where), and generates the appropriate low-level configuration for the Envoy proxies.
    
 **3. Data Plane Enforcement:** Istiod distributes these configurations to all relevant Envoy sidecar proxies. The proxies then manage the traffic, enforce security, and collect data according to these configurations, without the applications needing to be aware of these details.
+
 ---
 ### Benefits of Using Istio 🚀
 - **Improved Developer Productivity:** Developers can focus on business logic instead of networking and security concerns.
